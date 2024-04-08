@@ -1,0 +1,235 @@
+/* import myImage from './project-mangement-banner.jpg'; */
+
+/* src/components/MyComponent.css */
+/* src/components/MyComponent.css */
+
+
+.container {
+    /* background-image: url('./project-mangement-banner.jpg');
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat; */
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 10%;
+
+  
+     /* @media (max-width: 900px) {
+      height: 50vh; 
+      background-position: 20%;
+      padding-right: 8%;
+    }
+
+    @media (max-width: 591px) {
+        height: 50vh;
+        background-position: 17%;
+       
+     }   */
+    
+  }
+
+  .container h1{
+    color: rgb(42, 108, 233);
+
+  }
+
+  .container .box{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin-top : 15px;
+  }
+
+  .container .box  {
+    
+     font-size: large;
+     border-radius: 10px;
+     border:none;
+  }
+
+ 
+
+
+  @media(max-width:630px)
+  {
+     
+    .container{
+        /* width : 100%;
+        height : 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+     }
+     h1{
+      font-size: 30px;
+     }
+
+     .container .box button {
+      width : 140px;
+      height: 40px;
+      margin : 3px;
+      font-size:medium;
+      border-radius: 5px;
+   }
+   .box{
+     margin-bottom: 50%;
+   }
+  }
+
+
+/* Styles for the chat window */
+.chat-window {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 500px; /* Set a maximum height for the chat window */
+  /* width: 80%; */
+  /* background-color: #dbe4ead3; */
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word; 
+
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar width */
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Styles for chat messages */
+.message {
+  margin: 5px 0; /* Add some spacing between messages */
+  padding: 5px 12px; /* Add padding to the messages */
+  border-radius: 8px; /* Add rounded corners to the messages */
+  display: flex;
+  flex-direction: column;
+}
+
+.message h1{
+  font-size: 13px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.message p{
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 2px;
+}
+
+.message.right {
+  background-color: #DCF8C6;
+  display: flex;
+  align-items: end;
+  align-self: flex-end; 
+  justify-content: end;
+
+  border-radius: 10px 10px 1px 10px;
+  margin-right: 10px;
+  word-wrap: break-word; 
+  max-width: 50%;
+  hyphens: auto; 
+  text-wrap: wrap;
+}
+
+
+.message.left {
+  max-width: 50%;
+  background-color: #E0E0E0; 
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  overflow:hidden;
+  align-self: flex-start; 
+
+word-wrap: break-word; 
+border-radius: 10px 10px 10px 1px;
+margin-left: 10px;
+hyphens: auto; 
+}
+
+.messages{
+  display: flex;
+  flex-direction: row;
+  
+  margin: 3px;
+}
+
+.avatar{
+  background-color: #E0E0E0;
+  padding: 5px 10px;
+  height: 30px;
+
+  box-sizing: border-box;
+  border-radius: 60%;
+  margin: 15px 5px;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.date{
+
+  font-size: 13px;
+  /* width: 100%; */
+  color: #727473;
+}
+
+.chat{
+  display:flex;
+}
+
+
+.input{
+  width: 92%;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgb(215, 203, 203);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 50px;
+  border: none;
+}
+.button{
+  width: 0%;
+  background-color: #43cea2;
+  border: none;
+  padding: 10px;
+  margin-top: 11px;
+ margin-left: -56px;
+  border-radius: 50px;
+}
+
+.formm{
+  display: flex;
+  flex-direction: row;
+  /* margin-bottom: 5px;
+  margin-right: 5px; */
+  position: sticky;
+  top: 90%;
+  /* background-color: linear-gradient(to right,#43cea2,#185a9d); */
+
+}
+
+
+
+
+
+
+
+
+
+  
+  
